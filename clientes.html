@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="ajax.js"></script>
+    <script language="javascript" src="fckeditor.js"></script>
+    <script>
+        function ReplaceAllTextareas() {
+            var allTextAreas = document.getElementsByTagName("textarea");
+            for (var i = 0; i < allTextAreas.length; i++) {
+                var oFCKeditor = new FCKeditor(allTextAreas[i].name);
+                oFCKeditor.BasePath = "/sys/FCKeditor/";
+                oFCKeditor.ReplaceTextarea();
+            }
+        }
+    </script>
+    <script charset="utf-8" id="injection_graph_func" src="injection_graph_func.js"></script>
+</head>
+
+<body>
+    <table width="100%" border="0" cellpadding="5" cellspacing="0" height="400">
+        <tbody>
+            <tr>
+                <td valign="top" bgcolor="#ffffff"><strong><span style="font-size: 14px;"><span style=""><span style="font-family: Arial;">Principais Clientes</span></span></span></strong><span style="font-size: 12px;"><span style="font-family: Arial;"><br>
+            <br>
+            Volkswagen do Brasil Ltda<br>
+            Ford Motor Company do Brasil Ltda<br>
+            Aços Villares S/A<br>
+            Armco do Brasil S/A <br>
+            Brasmetal Waelzholz S/A Ind. e Comércio<br>
+            Daimler Chrysler do Brasil S/A<br>
+            Companhia de Trens Metropolitanos - CPTM<br>
+            BASF S/A<br>
+            Dana Industrias Ltda<br>
+            P.S.A Peugeot Citroen<br>
+            Scania Latina Americana Ltda<br>
+            Tintas Renner S/A<br>
+            Fibam Companhia Industrial </span></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
