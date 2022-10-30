@@ -1,6 +1,18 @@
+@keyframes grow {
+    from {
+        width: 0px;
+        left: 50%;
+    }
+    to {
+        width: 100%;
+        left: 0;
+    }
+}
+
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 0;
+    padding: 0 0;
+    font-family: sans-serif;
 }
 
 #header {
@@ -9,11 +21,12 @@ body {
     background-color: white;
     width: 100%;
     height: 15vh;
+    border-bottom: 1px rgba(228, 222, 222, 0.863) solid;
 }
 
 #logo-holder {
     width: 30%;
-    background-color: aquamarine;
+    height: 100%;
 }
 
 #logo-holder>a {
@@ -30,10 +43,91 @@ body {
 }
 
 #menu {
+    width: 50%;
+    height: 100%;
+    padding: 0 10vw;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #menu a {
+    position: relative;
     text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#menu a::after,
+.selected::after {
+    content: '';
+    height: 1px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+#menu a:hover::after,
+.selected::after {
+    animation: grow .4s forwards;
+}
+
+#footer {
+    background-color: #56585a;
+    color: white;
+    width: 100%;
+    margin: 0 0;
+    font-size: 12px;
+    position: static;
+    text-align: center;
+    padding: 3px 0 0 0;
+}
+
+.info {
+    padding: 0 0 3px 0;
+}
+
+#copyright {
+    background-color: transparent;
+    text-align: center;
+    border-top: 1px rgba(228, 222, 222, 0.863) solid;
+    position: relative;
+    line-height: 26px;
+    margin: 0 0;
+}
+
+#color-opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .5;
+    width: 100%;
+    height: 20vh;
+}
+
+#image {
+    position: relative;
+    background-image: url(../assets/fundo_title.jpg);
+    background-size: 100vw 20vh;
+    width: 100%;
+    height: 20vh;
+    max-height: 20vh;
+}
+
+#image>#texto {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 5%;
+    z-index: 2;
+    color: white;
+    font-size: 25pt;
 }
