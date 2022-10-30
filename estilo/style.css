@@ -29,7 +29,10 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#menu {}
+#menu {
+    display: flex;
+    flex-direction: row;
+}
 
 #menu a {
     text-decoration: none;
