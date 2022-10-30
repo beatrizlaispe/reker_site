@@ -131,3 +131,26 @@ body {
     color: white;
     font-size: 25pt;
 }
+
+#empresas {
+    display: block;
+}
+
+#empresas>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#empresas>div>div {
+    width: max-content;
+    height: 20vh;
+    border: 2px solid black;
+    display: table-cell;
+}
+
+#empresas img {
+    max-height: 15vh;
+    width: 20vw;
+}
