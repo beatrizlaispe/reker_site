@@ -1,47 +1,45 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="estilo.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="ajax.js"></script>
-    <script language="javascript" src="fckeditor.js"></script>
-    <script>
-        function ReplaceAllTextareas() {
-            var allTextAreas = document.getElementsByTagName("textarea");
-            for (var i = 0; i < allTextAreas.length; i++) {
-                var oFCKeditor = new FCKeditor(allTextAreas[i].name);
-                oFCKeditor.BasePath = "/sys/FCKeditor/";
-                oFCKeditor.ReplaceTextarea();
-            }
-        }
-    </script>
-    <script charset="utf-8" id="injection_graph_func" src="injection_graph_func.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reker</title>
 </head>
 
 <body>
-    <table width="100%" border="0" cellpadding="5" cellspacing="0" height="400">
-        <tbody>
-            <tr>
-                <td valign="top" bgcolor="#ffffff"><strong><span style="font-size: 14px;"><span style=""><span style="font-family: Arial;">Principais Clientes</span></span></span></strong><span style="font-size: 12px;"><span style="font-family: Arial;"><br>
-            <br>
-            Volkswagen do Brasil Ltda<br>
-            Ford Motor Company do Brasil Ltda<br>
-            Aços Villares S/A<br>
-            Armco do Brasil S/A <br>
-            Brasmetal Waelzholz S/A Ind. e Comércio<br>
-            Daimler Chrysler do Brasil S/A<br>
-            Companhia de Trens Metropolitanos - CPTM<br>
-            BASF S/A<br>
-            Dana Industrias Ltda<br>
-            P.S.A Peugeot Citroen<br>
-            Scania Latina Americana Ltda<br>
-            Tintas Renner S/A<br>
-            Fibam Companhia Industrial </span></span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <script src="script.js"></script>
+    <div id="header">
+        <div id="logo-holder">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div id="menu">
+            <a href="empresa.html">A Empresa</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="equipamento.html">Equipamentos</a>
+            <a href="contato.html">Fale Conosco</a>
+            <a href="https://www.dinamicagestao.com.br/compliance/reker">Compliance</a>
+        </div>
+    </div>
+    <div id="content">
+
+    </div>
+    <div id="footer">
+        <p class="info">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> Rua Cristóvão de Barros, 235 - Bairro Assunção 09850-190 - São Bernardo do Campo - SP
+        </p>
+        <p class="info">
+            <i class="fa fa-phone" aria-hidden="true"></i> (11) 4351-5064
+            <i class="fa fa-envelope" aria-hidden="true"></i> reker@reker.com.br
+        </p>
+        <p id="copyright">Copyright © 2022. Direitos reservados.</p>
+    </div>
 </body>
 
 </html>
