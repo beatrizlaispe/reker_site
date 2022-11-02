@@ -1,3 +1,8 @@
+:root {
+    --line-color: rgba(228, 222, 222, 0.863);
+    --cinza: #56585a;
+}
+
 @keyframes grow {
     from {
         width: 0px;
@@ -25,6 +30,14 @@ body {
     padding: 0 0;
     font-family: sans-serif;
     overflow-x: hidden;
+}
+
+p {
+    color: var(--cinza)
+}
+
+h2 {
+    color: var(--cinza);
 }
 
 #header {
@@ -92,8 +105,7 @@ body {
 }
 
 #footer {
-    background-color: #56585a;
-    color: white;
+    background-color: var(--cinza);
     width: 100%;
     margin: 0 0;
     font-size: 12px;
@@ -104,18 +116,20 @@ body {
 
 .info {
     padding: 0 0 3px 0;
+    color: white !important;
 }
 
 #copyright {
     background-color: transparent;
     text-align: center;
-    border-top: 1px rgba(228, 222, 222, 0.863) solid;
+    border-top: 1px var(--line-color) solid;
     position: relative;
     line-height: 26px;
     margin: 0 0;
+    color: white !important;
 }
 
-#color-opacity {
+.color-opacity {
     position: absolute;
     top: 0;
     left: 0;
@@ -148,6 +162,7 @@ body {
 #content {
     width: 100%;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 #content h2 {
@@ -155,16 +170,23 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: fit-content;
+    max-width: 80%;
 }
 
-#empresas {
+.text p {
+    max-width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.images-container {
     display: block;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     max-width: 960px;
-    margin-bottom: 40px;
 }
 
 .row {
@@ -173,26 +195,129 @@ body {
     transform: translateX(-50%);
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     height: 200px;
+}
+
+#empresas .row {
     margin-bottom: 10px;
+}
+
+#equipamentos .row {
+    margin-bottom: 30px;
 }
 
 .row>div {
     display: block;
-    min-width: 200px;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #56585a;
     border-radius: 4px;
-    margin: 0 5px;
+    border: 1px solid var(--cinza);
+    text-align: center;
 }
 
-#empresas img {
+#empresas>.row>div {
+    width: 200px;
+    height: 200px;
+}
+
+#equipamentos>.row>div {
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+#equipamentos>.row>div>span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 100%;
+    font-size: 24pt;
+}
+
+#equipamentos>.row>div:hover {
+    background-color: var(--cinza);
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
+#equipamentos>.row>div:hover span {
+    display: block;
+    color: var(--line-color);
+    animation: titleDescend 1s forwards;
+}
+
+#equipamentos>.row>div:hover img {
+    display: none;
+}
+
+.images-container img {
     position: relative;
     width: 80%;
     max-height: 200px;
     top: 50%;
+    transform: translateY(-50%);
+}
+
+.columns-holder {
+    position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 960px;
+    margin: 70px 0;
+    padding: 30px 0;
+}
+
+.columns-holder::after,
+.columns-holder::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: var(--line-color);
+    position: absolute;
+}
+
+.columns-holder::after {
+    top: 100%;
+}
+
+.columns-holder::before {
+    top: 0%;
+}
+
+.columns-holder>div {
+    text-align: center;
+}
+
+.columns-holder>div>h2 {
+    font-size: 16pt;
+}
+
+.columns-holder>div>i {
+    font-size: 40pt;
+    border-radius: 50%;
+    padding: 14px;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+}
+
+.columns-holder>div>i:hover {
+    color: white;
+    background-color: var(--cinza);
+    transition: .2s;
+    -webkit-transition: .2s;
+}
+
+.columns-holder>div {
+    color: var(--cinza);
+}
+
+.text {
+    max-width: 960px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
