@@ -147,6 +147,7 @@ body {
 
 #content {
     width: 100%;
+    align-items: center;
 }
 
 #content h2 {
@@ -163,6 +164,7 @@ body {
     transform: translateX(-50%);
     width: 100%;
     max-width: 960px;
+    margin-bottom: 40px;
 }
 
 .row {
