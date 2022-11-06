@@ -1,44 +1,77 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="estilo.css" rel="stylesheet" type="text/css">
- <script type="text/javascript" src="ajax.js"></script>
-    <script language="javascript" src="fckeditor.js"></script>
-<script>
-        function ReplaceAllTextareas() {
-                var allTextAreas = document.getElementsByTagName("textarea");
-                for (var i=0; i < allTextAreas.length; i++) {
-                var oFCKeditor = new FCKeditor( allTextAreas[i].name ) ;
-                oFCKeditor.BasePath = "/sys/FCKeditor/" ;
-                oFCKeditor.ReplaceTextarea() ;
-                }
-        }
-</script>
-<script charset="utf-8" id="injection_graph_func" src="injection_graph_func.js"></script></head><body>
-  <table width="100%" border="0" cellpadding="5" cellspacing="0" height="400">
-    <tbody>
-        <tr>
-            <td style="text-align: justify;" valign="top" bgcolor="#ffffff"><strong><span style="font-family: Arial;"><span style="font-size: 14px;"><span style=""><span style="">Serviços Prestados</span></span></span></span></strong><span style="font-size: 12px;"><span style="font-family: Arial;"><br />
-            <br>
-Usinagem em geral, reposição, reforma e nacionalização de dispositivos
-e meios auxiliares, mecânica, eletro-pneumáticos e hidráulicos (bombas,
-compressores, redutores de velocidade, alimentadores e linhas aéreas ou
-esteiras transportadoras) e caldeiraria. Mediante projeto, amostra ou
-consulta técnica, confeccionamos o equipamento completo ou itens tais
-como: buchas, mancais, engrenagens nos diversos sistemas e formas
-(módulo, diametral-pitch, circular-pitch e correntes), paralelas,
-cônicas e helicoidais, em qualquer dimensão.<br>
-Utilizamos, conforme necessidade técnica, matéria-prima específica
-fornecida por fabricantes conceituados, acompanhada de Certificado de
-Garantia que nos asseguram a complementação de processos térmicos e
-químicos, tais como: Têmpera, Revenimento, Cementação, nitretação,
-cromeação (dura ou artística), fosfatização, oxidação etc.<br>
-Em usinagem própria todo processo de trabalho é elaborado respeitando
-rigorosamente normas e técnicas de medidas e acabamentos superficiais.<br>
-Com base em longa experiência no ramo de manutenção industrial nossa
-constante preocupação está em oferecer excelente QUALIDADE e
-cumprimento do cronograma de PRAZOS.</span></span></td>
-      </tr>
-    </tbody>
-</table>
-    </body></html>
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reker</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="header">
+        <div id="logo-holder">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div id="menu">
+            <li><a href="empresa.html">Sobre Nós</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a class="selected" href="servicos.html">Serviços</a></li>
+            <li><a href="equipamentos.html">Equipamentos</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+            <li><a href="https://www.dinamicagestao.com.br/compliance/reker">Compliance</a></li>
+        </div>
+    </div>
+    <div id="content">
+        <div class="banner">
+            <img src="assets/fundo_title.jpg" alt="banner">
+            <div id="texto">Equipamentos</div>
+            <div class="color-opacity"></div>
+        </div>
+        <h2>Conheça nossos equipamentos</h2>
+        <div class="images-container" id="equipamentos">
+            <div class="row">
+                <div>
+                    <img src="assets/equipamentos/discovery1250PARQUEFABRIL-.png" alt="Parque Fabril 1250">
+                    <span>Parque Fabril 1250</span>
+                </div>
+                <div>
+                    <img src="assets/equipamentos/discovery760PARQUEFABRIL-.png" alt="Parque Fabril 760">
+                    <span>Parque Fabril 760</span>
+                </div>
+                <div>
+                    <img src="assets/equipamentos/tridimensionaPARQUEFABRILl-.png" alt="Tridimensional">
+                    <span>Tridimensional</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="assets/equipamentos/torno_multiplic35DPARQUEFABRIL-.png" alt="Torno Multiplic 35D">
+                    <span>Torno Multiplic 35D</span>
+                </div>
+                <div>
+                    <img src="assets/equipamentos/torno_multiplicPARQUEFABRIL-.png" alt="Torno Multiplic">
+                    <span>Torno Multiplic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p class="info">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> Rua Cristóvão de Barros, 235 - Bairro Assunção 09850-190 - São Bernardo do Campo - SP
+        </p>
+        <p class="info">
+            <i class="fa fa-phone" aria-hidden="true"></i> (11) 4351-5064
+            <i class="fa fa-envelope" aria-hidden="true"></i> reker@reker.com.br
+        </p>
+        <p id="copyright">Copyright © 2022. Direitos Reservados.</p>
+    </div>
+</body>
+
+</html>
