@@ -34,7 +34,26 @@
             <div id="texto">Fale Conosco</div>
             <div class="color-opacity"></div>
         </div>
-
+        <div class="row-contato">
+            <form action="php/send_email.php" method="post">
+                <h3>Formulário de Contato</h3>
+                <label for="nome"></label><br>
+                <input type="text" id="nome" name="nome" placeholder="Nome"><br>
+                <label for="telefone"></label><br>
+                <input type="text" id="telefone" name="telefone" placeholder="Telefone"><br>
+                <label for="email"></label><br>
+                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <label for="mensagem"></label><br>
+                <textarea name="mensagem" id="mensagem" cols="50" rows="15" placeholder="Mensagem"></textarea>
+                <input type="submit" value="Enviar" id="btn_enviar" name="btn_enviar">
+            </form>
+            <div class="form-legenda">
+                <p>Você tem perguntas sobre algum serviço específico da Réker?</p>
+                <p>Seja qual for sua questão, preencha o formulário com seus dados e você poderá obter resposta para a sua necessidade.</p>
+                <p>Necessita de um orçamento? Entre em contato que enviaremos para você.</p>
+            </div>
+        </div>
+    </div>
     </div>
     <div id="footer">
         <p class="info">
